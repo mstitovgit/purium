@@ -1,0 +1,11 @@
+{
+  "name": "purium",
+  "version": "1.0.0",
+  "author": "Maksim",
+  "license": "false",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
