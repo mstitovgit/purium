@@ -1,0 +1,33 @@
+.S_Cards {
+  width: 1320px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--Mspace);
+  &.carosel {
+    gap: 0px;
+  }
+}
+
+.O_CategoriesCards {
+  display: flex;
+  gap: 48px;
+}
+
+.M_CategoryCard {
+  height: 224px;
+  width: 224px;
+  background-color: var(--white);
+  border-radius: var(--corner);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--Sspace);
+}
+
+.A_CategoryName {
+  font-size: 24px;
+  color: var(--blue);
+  line-height: 90%;
+}

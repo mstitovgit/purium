@@ -1,0 +1,116 @@
+.O_Header {
+  position: relative;
+  top: 0;
+  width: 1440px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+.A_Logo {
+  height: 32px;
+  width: 125px;
+  &.header {
+    position: absolute;
+    top: 49px;
+    left: 61px;
+  }
+  &.white {
+    background-image: url('images/header/A_Logo.svg');
+  }
+  &.blue {
+    background-image: url('images/header/A_Logo_blue.svg');
+  }
+  &.footer {
+    position: absolute;
+    top: 205px;
+    left: 60px;
+  }
+}
+
+.M_NavBar {
+  position: absolute;
+  left: 403px;
+  top: 40px;
+  display: flex;
+  width: fit-content;
+  justify-content: start;
+  align-items: center;
+}
+
+.A_HeaderLink {
+  display: flex;
+  width: fit-content;
+  height: auto;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.A_HeaderLink a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 100%;
+  &.white {
+    color: var(--white);
+  }
+  &.blue {
+    color: var(--blue);
+  }
+}
+
+.A_SocialBar {
+  display: flex;
+  align-items: center;
+  gap: var(--XSspace);
+  &.header {
+    position: absolute;
+    left: 1180px;
+    top: 50px;
+  }
+  &.footer {
+    position: absolute;
+    left: 1180px;
+    top: 48px;
+  }
+}
+
+.inst {
+  display: block;
+  height: 35px;
+  width: 35px;
+  background-position: center;
+  background-size: cover;
+  &.white {
+    background-image: url('images/header/ri_instagram-fill.svg');
+  }
+  &.blue {
+    background-image: url('images/header/ri_instagram-fill_blue.svg');
+  }
+}
+
+.tg {
+  display: block;
+  height: 35px;
+  width: 35px;
+  background-position: center;
+  background-size: cover;
+  &.white {
+    background-image: url('images/header/ic_baseline-telegram.svg');
+  }
+  &.blue {
+    background-image: url('images/header/ic_baseline-telegram_blue.svg');
+  }
+}
+
+.vk {
+  display: block;
+  height: 35px;
+  width: 35px;
+  background-position: center;
+  background-size: cover;
+  &.white {
+    background-image: url('images/header/ri_vk-fill.svg');
+  }
+  &.blue {
+    background-image: url('images/header/ri_vk-fill_blue.svg');
+  }
+}

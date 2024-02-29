@@ -1,0 +1,175 @@
+.carosel {
+  display: flex;
+  gap: 24px;
+  width: fit-content;
+  z-index: 2;
+}
+
+.O_ProductCard {
+  width: 300px;
+  height: 330px;
+  border-radius: var(--corner);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: var(--Sspace);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  color: var(--black);
+  &.info {
+    box-shadow: none;
+    background-color: var(--blue);
+    color: var(--white);
+    .A_ItemImage {
+      display: none;
+    }
+    .A_ItemName {
+      display: none;
+    }
+    .M_ItemInfo {
+      display: flex;
+      flex-direction: column;
+      gap: var(--Sspace);
+    }
+  }
+}
+.A_Mark {
+  display: flex;
+  width: fit-content;
+  height: 18px;
+  gap: var(--XSspace);
+  align-items: center;
+
+  &.danger {
+    cursor: pointer;
+    text-decoration: underline;
+    // font-style: italic;
+    color: var(--orange);
+  }
+
+  &.safe {
+    color: var(--green);
+  }
+  &.info {
+    cursor: pointer;
+    color: var(--white);
+    text-decoration: underline;
+    //font-style: italic;
+  }
+}
+
+.A_Mark.danger:hover {
+  .MarkIcon.danger {
+    background-image: url('images/MarkDangerBlack.svg');
+  }
+  color: var(--black);
+}
+
+.A_Mark.info:hover {
+  color: var(--black);
+}
+
+.MarkIcon {
+  background-position: center;
+  height: 18px;
+  width: 18px;
+  background-repeat: no-repeat;
+  &.safe {
+    background-image: url('images/MarkSafe.svg');
+    &.full {
+      position: absolute;
+      top: 36px;
+      left: 48px;
+      height: 28px;
+      width: 28px;
+      background-size: contain;
+    }
+  }
+  &.danger {
+    background-image: url('images/MarkDanger.svg');
+    &.full {
+      position: absolute;
+      top: 36px;
+      left: 48px;
+      
+      height: 28px;
+      width: 28px;
+      background-size: contain;
+    }
+  }
+  &.info {
+    display: none;
+  }
+}
+
+.A_Mark p {
+  font-size: 18px;
+}
+.W_ProdCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.A_ItemImage {
+  max-width: 220px;
+  max-height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &.full{
+    max-width: 220px;
+    max-height: 285px;
+  }
+}
+
+.A_ItemName {
+  height: 48px;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--black);
+  width: auto;
+  &.short{
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  }
+  
+}
+
+.M_ItemInfo {
+  &.hide {
+    display: none;
+  }
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--white) var(--blue);
+  color: var(--white);
+
+  &.full {display: flex;
+    flex-direction: column;
+    gap: var(--Sspace);
+    color: var(--black);
+  }
+    
+}
+
+.property {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+ 
+  
+}
+
+.propertydata {
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 380;
+  
+}

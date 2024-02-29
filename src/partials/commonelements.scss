@@ -1,0 +1,64 @@
+.A_LinkAccent {
+  text-decoration: underline;
+  color: var(--blue);
+  font-size: 24px;
+  line-height: 120%;
+  &.RightAlign {
+    position: relative;
+    text-align: right;
+    //  top: var(--Sspace);
+  }
+}
+
+.A_SectionName {
+  font-weight: 500;
+  font-style: italic;
+  color: var(--black);
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.A_Icon {
+  height: 100px;
+  width: 100px;
+  background-position: center;
+  background-size: cover;
+  &.care {
+    background-image: url('images/categories/CARE.svg');
+  }
+  &.aroma {
+    background-image: url('images/categories/AROMA.svg');
+  }
+  &.food {
+    background-image: url('images/categories/FOOD.svg');
+  }
+  &.clean {
+    background-image: url('images/categories/CLEAN.svg');
+  }
+  &.bedroom {
+    background-image: url('images/categories/BEDROOM.svg');
+  }
+
+  &.filter {
+    height: 41px;
+    width: 41px;
+    &.care {
+      background-image: url('images/categories/F_Care.svg');
+    }
+    &.aroma {
+      background-image: url('images/categories/F_Aroma.svg');
+    }
+    &.food {
+      background-image: url('images/categories/F_Food.svg');
+    }
+    &.clean {
+      background-image: url('images/categories/F_Clean.svg');
+    }
+    &.bedroom {
+      background-image: url('images/categories/F_Bedroom.svg');
+    }
+    &.all {
+      background-image: url('images/categories/F_ALL.svg');
+    }
+  }
+}

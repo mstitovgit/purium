@@ -1,0 +1,13 @@
+.M_SearchButton{
+  color: var(--white);
+  border: none;
+font-size: 24px;
+line-height: 120%;
+background-color: var(--blue);
+padding: 24px 32px;
+border-radius: var(--circle);
+cursor: pointer;
+&:hover{
+  background-color: lighten($color: #016DFF, $amount: 10);
+}
+}

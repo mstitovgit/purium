@@ -1,0 +1,74 @@
+.S_Onboarding {
+  width: 1320px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.O_Onboarding {
+  position: relative;
+  //width: (1320-200)px;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--Sspace);
+}
+
+.M_Spoiler {
+  display: flex;
+  gap: 137px;
+  //width: 900px;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::-moz-list-bullet {
+  list-style-type: none;
+}
+summary::marker {
+  display: none;
+}
+
+.A_SpoilerSummary {
+  display: inline-block;
+  padding: 24px 0px;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+  margin-left: 135px;
+  color: var(--blue);
+}
+
+.A_SpoilerSummary:before {
+  display: inline-block;
+  color: transparent;
+  background-image: url('images/OpenArrow.svg');
+  width: 23px;
+  height: 23px;
+  content: '';
+  position: relative;
+  left: -135px;
+  transition: transform 0.5s;
+}
+
+.M_Spoiler[open] > .A_SpoilerSummary:before {
+  transform: scale(1, -1);
+}
+
+//.M_Spoiler[open] .A_SpoilerSummary ~ *{
+//  animation: sweep .5s ease-in-out;
+// }
+
+//@keyframes sweep {
+//  0%    {opacity: 0;}
+// 100%  {opacity: 1;}
+// }
+
+.M_Spoiler p {
+  width: 600px;
+  font-size: 20px;
+  line-height: 140%;
+  position: relative;
+  margin-left: 160px;
+  margin-bottom: 40px;
+}

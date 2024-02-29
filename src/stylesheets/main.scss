@@ -1,0 +1,19 @@
+
+
+.page{
+    background-color: var(--white);
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    row-gap: 128px;
+}
+
+.mainpage {
+    background-image: url('images/header/A_Background.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    
+}

@@ -1,0 +1,14 @@
+.A_SuggestItemButton{
+  height: 28px;
+  width: 29px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  &.Add{
+    background-image: url('../../../images/AddItem.svg');
+  }
+  &.Remove{
+    background-image: url('../../../images/RemoveItem.svg');
+  }
+}

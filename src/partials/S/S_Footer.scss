@@ -1,0 +1,30 @@
+.S_Footer {
+  width: 1440px;
+  height: 290px;
+  background-color: var(--blue);
+  border-radius: 24px 24px 0px 0px;
+  position: relative;
+}
+.S_Footer a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 18px;
+}
+
+.Links1 {
+  position: absolute;
+  top: 48px;
+  left: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.Links2 {
+  position: absolute;
+  top: 48px;
+  left: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

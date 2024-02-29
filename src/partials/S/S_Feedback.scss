@@ -1,0 +1,26 @@
+.S_Feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.M_Feedbacktext {
+  color: var(--black);
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.mailbutton {
+  color: var(--white);
+  font-size: 24px;
+  font-style: italic;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 32px;
+  background-color: var(--blue);
+  border-radius: 48px;
+  align-self: center;
+}

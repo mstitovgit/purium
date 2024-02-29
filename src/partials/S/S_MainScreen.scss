@@ -1,0 +1,75 @@
+.S_Mainscreen {
+  position: relative;
+  width: 1440px;
+  height: 800px;
+}
+
+.M_Description {
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.M_Description p {
+  color: white;
+  text-align: center;
+  font-size: 64px;
+  line-height: 90%;
+  letter-spacing: -2%;
+}
+
+.Hbold {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+}
+
+.searchicon {
+  display: none;
+  height: 28px;
+  width: 28px;
+  background-image: url('images/header/SearchIcon.svg');
+  background-position: center;
+  background-size: cover;
+}
+
+.M_Mainbutton {
+  margin: 0 auto;
+
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--XSspace);
+  padding: 24px 32px;
+  border-radius: var(--circle);
+  font-size: 24px;
+  line-height: 120%;
+  &.white {
+    background-color: var(--white);
+    color: var(--blue);
+  }
+  &.blue {
+    background-color: var(--blue);
+    color: var(--white);
+  }
+
+  &.CTA {
+    .searchicon {
+      display: block;
+    }
+    margin-top: var(--Mspace);
+  }
+  &.mail {
+    font-style: italic;
+  }
+}
+
+#onboardinglink {
+  position: absolute;
+  left: 1020px;
+  top: 639px;
+  text-align: right;
+}

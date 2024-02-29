@@ -1,0 +1,31 @@
+.A_SearchInputWrap {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 32px;
+  //background-color: var(--white);
+  //border-radius: ;
+  &::before{
+    content: "";
+    display: inline-block;
+    background-image: url('../../../images/SearchIcon.svg');
+    height: 29px;
+    width: 29px;
+  }
+}
+
+.A_SearchInput {
+  font-size: 24px;
+  color: var(--blue);
+  background-color: none;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: var(--blue);
+    opacity: 0.4;
+  }
+
+}

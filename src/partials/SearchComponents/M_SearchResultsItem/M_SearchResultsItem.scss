@@ -1,0 +1,40 @@
+.M_SearchResultsItem{
+    display: flex;
+    padding: 36px 48px;
+    gap: 64px;
+    border-radius: var(--corner);
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    width: 920px;
+    height: fit-content;
+    position: relative;
+}
+
+.W_ItemName{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--Mspace);
+}
+
+.A_DataDescriptor{
+    color: var(--blue);
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.W_ItemInfo{
+    width: 250px;
+    display:flex;
+    flex-direction: column;
+    gap: var(--Mspace);
+}
+
+.W_ResItemImage{
+    width: 220px;
+    height: 285px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

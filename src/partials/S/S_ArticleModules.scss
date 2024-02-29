@@ -1,0 +1,116 @@
+.S_ArticleModules {
+  width: 1320px;
+  display: flex;
+  justify-content: center;
+  gap: 160px;
+}
+.O_LeftSide {
+  width: 200px;
+  height: auto;
+}
+
+.A_SmallLink {
+  font-size: 18px;
+  color: var(--blue);
+}
+.A_SmallLink:hover {
+  color: var(--black);
+}
+.O_ArticleText {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--Lspace);
+  color: var(--black);
+}
+.M_ArticleHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Mspace);
+}
+.A_ArticleName {
+  font-size: 56px;
+  line-height: 90%;
+  letter-spacing: -2px;
+  text-align: center;
+}
+.A_ArticlePublicationInfo {
+  font-size: 16px;
+  color: #999999;
+  text-align: center;
+}
+.A_space {
+  width: 172px;
+  height: 40px;
+  margin: 0 auto;
+  background-image: url('images/M_ArticleSpace.svg');
+}
+.M_Paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Sspace);
+}
+.A_ParagraphName {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 32px;
+}
+.A_ParagraphText {
+  font-size: 20px;
+  line-height: 140%;
+}
+.M_ArticleImage {
+  display: flex;
+  flex-direction: column;
+  gap: var(--XSspace);
+}
+.A_ArticleImage {
+  width: 600px;
+  height: 330px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.A_ImageCaption {
+  font-size: 14px;
+  line-height: 120%;
+  color: #999999;
+}
+.term {
+  text-decoration: underline;
+}
+.O_RightSide {
+  display: flex;
+  //height: fit-content;
+  width: 200px;
+}
+
+.sticky {
+  position: sticky;
+  top: 48px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.M_Chapters {
+  display: flex;
+  flex-direction: column;
+  gap: var(--XSspace);
+  font-size: 18px;
+  color: var(--blue);
+}
+.M_Chapters a:hover {
+  color: var(--black);
+}
+
+.M_upButton {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.M_upButton:hover {
+  color: var(--black);
+}

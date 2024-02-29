@@ -1,0 +1,27 @@
+.O_ArticleCards {
+  display: flex;
+  gap: 24px;
+  &.carosel {
+    padding: 32px 0px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    width: 1320px;
+  }
+  &.all {
+    flex-wrap: wrap;
+    width: 1320px;
+  }
+}
+
+.M_ArticleCard {
+  height: 312px;
+  width: 312px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: var(--corner);
+  box-shadow: var(--shadow);
+  &.white {
+    border: 1px var(--grey) solid;
+  }
+}
