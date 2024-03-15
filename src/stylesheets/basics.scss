@@ -12,3 +12,12 @@
     font-weight: 380;
   }
   
+  a {
+    color: var(--blue);
+    &:hover{
+      color: var(--black);
+    }
+    & :visited {
+      color: var(--blue);
+    }
+  }

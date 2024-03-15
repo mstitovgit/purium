@@ -6,6 +6,9 @@
   margin: 0 auto;
 }
 
+#categorybutton{
+  text-align: center;
+}
 .A_Logo {
   height: 32px;
   width: 125px;
@@ -33,6 +36,7 @@
   top: 40px;
   display: flex;
   width: fit-content;
+  height: 50px;
   justify-content: start;
   align-items: center;
 }
@@ -40,12 +44,52 @@
 .A_HeaderLink {
   display: flex;
   width: fit-content;
-  height: auto;
+  height: 50px;
   padding: 16px;
-  justify-content: center;
-  align-items: center;
+  &.category{padding: 0px;}
+  //justify-content: center;
+  //align-items: center;
 }
-.A_HeaderLink a {
+
+
+.categorycontainer{
+ position: relative;
+ width: 128px;
+  display: inline-block;
+  padding: 16px;
+ // width: max-content;
+ // padding: var(--XSspace) 0;
+  gap: var(--XSspace);
+  &:hover{
+    p {color: var(--white);}
+    background-color: var(--blue);
+    border-radius: 16px 16px 0 0;
+    
+   // box-shadow: var(--shadow);
+    .categorylinks {display: flex;}
+  cursor: pointer;
+  }
+}
+
+.categorylinks{
+ margin-top: 16px;
+  left: 0px;
+  
+  background-color: var(--blue);
+  position:absolute;
+  padding: 16px;
+ // box-shadow: var(--shadow);
+  border-radius: 0 0 16px 16px;
+  display: none;
+  flex-direction: column;
+  gap: var(--Sspace);
+  justify-content: center;
+  z-index: 6;
+  width: 128px;
+}
+
+
+.A_HeaderLink a, p{
   text-decoration: none;
   font-size: 18px;
   line-height: 100%;
@@ -55,6 +99,7 @@
   &.blue {
     color: var(--blue);
   }
+  
 }
 
 .A_SocialBar {
