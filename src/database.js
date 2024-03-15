@@ -48,7 +48,7 @@ function getArticlesData() {
             image: record.get('Image'),
             iswhite: record.get('iswhite'),
             name: record.get('Name'),
-            publshed: record.get('published'),
+            published: record.get('published'),
             text: record.get('Text'),
             notions: record.get ('notions'),
             articleimages: record.get('articleimages'),

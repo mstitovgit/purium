@@ -98,19 +98,29 @@
 .M_Chapters {
   display: flex;
   flex-direction: column;
-  gap: var(--XSspace);
+  gap: var(--Sspace);
   font-size: 18px;
-  color: var(--blue);
 }
-.M_Chapters a:hover {
-  color: var(--black);
+ ul {
+  list-style-type: disc;	
+padding: 16px 48px;
+font-size: 20px;
+font-family: 'Open Sans';
+font-style: italic;
+
+ }
+ li {
+  margin-bottom: 16px;
+ }
+
+.ultext{
+  margin-bottom: 32px;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-style: normal;
+  
 }
 
-.M_upButton {
-  color: var(--blue);
-  cursor: pointer;
-}
 
-.M_upButton:hover {
-  color: var(--black);
-}
+
+
