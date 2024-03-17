@@ -1,13 +1,27 @@
+.O_CaroselContainer{
+  width: 1320px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  padding: 32px 0;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
 .carosel {
+  padding: 0px 8px;
   display: flex;
   gap: 24px;
   width: fit-content;
   z-index: 2;
+  position: relative;
 }
 
 .O_ProductCard {
-  width: 300px;
-  height: 330px;
+  width: 240px;
+  height: 305px;
   border-radius: var(--corner);
   background-color: var(--white);
   display: flex;
@@ -33,6 +47,8 @@
     }
   }
 }
+
+
 .A_Mark {
   display: flex;
   width: fit-content;
@@ -80,8 +96,8 @@
       position: absolute;
       top: 36px;
       left: 48px;
-      height: 28px;
-      width: 28px;
+      height: 24px;
+      width: 24px;
       background-size: contain;
     }
   }
@@ -92,8 +108,8 @@
       top: 36px;
       left: 48px;
       
-      height: 28px;
-      width: 28px;
+      height: 24px;
+      width: 24px;
       background-size: contain;
     }
   }
@@ -103,7 +119,7 @@
 }
 
 .A_Mark p {
-  font-size: 18px;
+  font-size: 16px;
 }
 .W_ProdCard{
   display: flex;
@@ -112,8 +128,9 @@
 }
 
 .A_ItemImage {
-  max-width: 220px;
-  max-height: 200px;
+  max-width: 200px;
+  max-height: 180px;
+ 
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -125,8 +142,8 @@
 }
 
 .A_ItemName {
-  height: 48px;
-  font-size: 20px;
+  height: auto;
+  font-size: 18px;
   line-height: 120%;
   color: var(--black);
   width: auto;
@@ -172,4 +189,38 @@
   line-height: 120%;
   font-weight: 380;
   
+}
+
+.scroll {
+  &.disabled{display: none;}
+  top: 50%;
+  z-index: 3;
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  //border-radius: var(--circle);
+  //background-color: var(--white);
+  background-image: url('images/arrowcarusel.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+ // box-shadow: var(--shadow);
+  opacity: 0.9;
+  &.next{
+    right: -20px;
+    margin-left: 20px;
+  }
+  &.previous{
+    transform: scale(-1, 1);
+    left:-20px;
+  }
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    &.previous{ transform: scale(-1.2, 1.2);}
+   // background-image: url('images/scrollbutton.svg');
+   // border: 1px rgb(231, 231, 231) solid;
+    //box-shadow: var(--shadow);
+    
+  }
 }

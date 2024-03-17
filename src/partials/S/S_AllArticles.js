@@ -17,9 +17,33 @@ getArticlesData().then((array) => {
   articles = array
   SetAllArticleCards()
   AddListenersOnCards()
+  if (document.getElementById("LastArticles")){
+    SetLastArticles()
+  }
+  
 })
 
+
+
+
 // Функции
+
+function SetLastArticles (){
+for (let index = 0; index < 4; index++) {
+  let newElement = document.createElement('a')
+        let M_ArticleCardclass = 'M_ArticleCard'
+        if (articles[index].iswhite) {
+          M_ArticleCardclass = 'M_ArticleCard white'
+        }
+        newElement.classList = 'ablock'
+        newElement.setAttribute('id', `${articles[index].id}`)
+        newElement.setAttribute('href', `article.html`)
+        newElement.innerHTML = `<div class="${M_ArticleCardclass}" style = "background-image: url('${articles[index].image[0].url}')"></div>`
+
+        document.getElementById('LastArticles').appendChild(newElement)
+}
+}
+
 
 function SetFilterTag(tag) {
   filtertag = tag

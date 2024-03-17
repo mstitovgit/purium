@@ -63,6 +63,8 @@
   &:hover{
     p {color: var(--white);}
     background-color: var(--blue);
+    &.white{background-color: var(--white);
+    p {color: var(--black);}}
     border-radius: 16px 16px 0 0;
     
    // box-shadow: var(--shadow);
@@ -72,12 +74,13 @@
 }
 
 .categorylinks{
- margin-top: 16px;
+// margin-top: 16px;
   left: 0px;
   
   background-color: var(--blue);
   position:absolute;
   padding: 16px;
+  text-align: center;
  // box-shadow: var(--shadow);
   border-radius: 0 0 16px 16px;
   display: none;
@@ -86,6 +89,7 @@
   justify-content: center;
   z-index: 6;
   width: 128px;
+  &.white {background-color: var(--white);}
 }
 
 
@@ -94,13 +98,15 @@
   font-size: 18px;
   line-height: 100%;
   &.white {
-   // color: var(--white);
+    color: var(--white);
   }
   &.blue {
     color: var(--blue);
   }
   
 }
+
+.A_HeaderLink a:hover{color: var(--black);}
 
 .A_SocialBar {
   display: flex;
