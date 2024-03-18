@@ -17,13 +17,16 @@
   text-align: center;
   font-size: 64px;
   line-height: 90%;
-  letter-spacing: -2%;
+  letter-spacing: -2px;
 }
 
 .Hbold {
-  font-family: 'Open Sans';
-  font-style: italic;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 600;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 .searchicon {

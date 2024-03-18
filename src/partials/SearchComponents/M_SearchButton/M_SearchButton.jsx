@@ -8,7 +8,7 @@ export default class M_SearchButton extends React.Component {
 
 
   render() {
-    let buttontext = 'проверить ->'
+    let buttontext = 'проверить →'
     return(<button className='M_SearchButton' onClick={this.props.onClick}>
     {buttontext}
     </button>
